@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CryptoG</string>
+
+    <string-array name="tabTitleFrench">
+        <item>Favoris</item>
+        <item>Pays actuel</item>
+    </string-array>
+
+    <dimen name="textSizeSymbolCoin">15sp</dimen>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

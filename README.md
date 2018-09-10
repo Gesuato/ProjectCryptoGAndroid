@@ -1,1 +1,1 @@
-# ProjectCryptoGAndroid
+CryptoG

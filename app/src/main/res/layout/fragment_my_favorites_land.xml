@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MyFavoritesLand"
+    android:background="@drawable/shape_on_top_of_the_list"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <ImageButton
+            android:id="@+id/imageButtonCADLand"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/imagecanada"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButtonBRLLand"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/imagebrasilnotselected"
+            />
+
+        <TextView
+            android:id="@+id/textViewCADLand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAD"
+            app:layout_constraintEnd_toEndOf="@+id/imageButtonCADLand"
+            app:layout_constraintStart_toStartOf="@+id/imageButtonCADLand"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonCADLand"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewBRLLand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BRL"
+            app:layout_constraintEnd_toEndOf="@+id/imageButtonBRLLand"
+            app:layout_constraintStart_toStartOf="@+id/imageButtonBRLLand"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonBRLLand"
+            android:layout_marginTop="10dp"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ListView
+            android:id="@+id/listViewFavoritesLand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
+</LinearLayout>
